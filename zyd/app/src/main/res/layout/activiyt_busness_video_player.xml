@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bai">
+
+    <include layout="@layout/title_bar"></include>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:scrollbars="none"
+        android:background="#efefef">
+        <RadioGroup
+            android:id="@+id/video_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#efefef"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <RadioButton
+                android:id="@+id/teacher_lecture"
+                style="@style/radio_styles"
+                android:text="名师讲堂"
+                android:checked="true"
+                />
+            <RadioButton
+                android:id="@+id/debt_sample"
+                android:text="解债案例"
+                style="@style/radio_styles"/>
+            <RadioButton
+                android:id="@+id/the_answer"
+                android:text="答疑解惑"
+                style="@style/radio_styles"/>
+            <RadioButton
+                android:id="@+id/legal_advice"
+                android:text="法律咨询"
+                style="@style/radio_styles"
+                />
+            <RadioButton
+                android:id="@+id/teacher_elegant_demeanour"
+                android:text="名师风采"
+                style="@style/radio_styles"
+                android:layout_marginRight="20dp"/>
+        </RadioGroup>
+    </HorizontalScrollView>
+
+    <FrameLayout
+        android:id="@+id/video_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+</LinearLayout>

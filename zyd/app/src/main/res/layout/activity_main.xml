@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.jlgproject.com.zjzs.MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/fl_contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11">
+
+    </FrameLayout>
+
+    <View style="@style/loan_vertical_item_style" />
+
+    <LinearLayout
+        android:id="@+id/ll_linear"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_gravity="center">
+
+            <!-- 首页 -->
+            <LinearLayout
+                android:id="@+id/ll_homePage"
+                style="@style/mainActivitry_LinearLayout_style">
+
+                <ImageButton
+                    android:id="@+id/ib_btnHomePage"
+                    style="@style/mainActivitry_imageButton_style_2"
+                    android:background="@drawable/zyd_home_selector" />
+            </LinearLayout>
+
+            <!-- 债事管理 -->
+            <LinearLayout
+                android:id="@+id/ll_debt_manag"
+                style="@style/mainActivitry_LinearLayout_style">
+
+                <ImageButton
+                    android:id="@+id/ib_btn_Debt_manag"
+                    style="@style/mainActivitry_imageButton_style_2"
+                    android:background="@drawable/zyd_debt_manag_selector" />
+            </LinearLayout>
+
+            <!--债事人管理-->
+            <LinearLayout
+                android:id="@+id/ll_debt_manag_person"
+                style="@style/mainActivitry_LinearLayout_style">
+
+                <ImageButton
+                    android:id="@+id/ib_debt_manag_person"
+                    style="@style/mainActivitry_imageButton_style_2"
+                    android:background="@drawable/zyd_debt_manag_person_selector" />
+
+            </LinearLayout>
+
+            <!-- 我的账户 -->
+            <LinearLayout
+                android:id="@+id/ll_myLayout"
+                style="@style/mainActivitry_LinearLayout_style">
+
+                <ImageButton
+                    android:id="@+id/ib_MyPage"
+                    style="@style/mainActivitry_imageButton_style_2"
+                    android:background="@drawable/zyd_my_selector" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

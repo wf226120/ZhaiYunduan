@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.jlgproject.fragment.HomePageFragment">
+
+    <include layout="@layout/title_bar"></include>
+
+
+    <LinearLayout
+        android:id="@+id/id_ly_bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#efefef"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/btnWf1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#efefef"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp">
+
+                <TextView
+                    android:id="@+id/txtWf1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="未解决"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <RelativeLayout
+                    android:id="@+id/lineWf1"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignBottom="@id/txtWf1"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/red" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btnWf2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#efefef"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp">
+
+                <TextView
+                    android:id="@+id/txtWf2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="已解决"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <RelativeLayout
+                    android:id="@+id/lineWf2"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@color/red" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_zsba"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+
+</LinearLayout>

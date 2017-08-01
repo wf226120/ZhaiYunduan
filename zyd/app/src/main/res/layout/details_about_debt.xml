@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bai"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <include layout="@layout/title_bar">
+                </include>
+
+                <ScrollView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="15dp"
+                            android:text="债事进度"
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#cccccc"></View>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/image1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@mipmap/red" />
+
+                                <View
+                                    android:id="@+id/line1"
+                                    android:layout_width="70dp"
+                                    android:layout_height="2dp"
+                                    android:background="@color/red"></View>
+
+                                <ImageView
+                                    android:id="@+id/image2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@mipmap/number2" />
+
+                                <View
+                                    android:id="@+id/line2"
+                                    android:layout_width="70dp"
+                                    android:layout_height="2dp"
+                                    android:background="#d6d6d6"></View>
+
+                                <ImageView
+                                    android:id="@+id/image3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@mipmap/number3" />
+
+                                <View
+                                    android:id="@+id/line3"
+                                    android:layout_width="70dp"
+                                    android:layout_height="2dp"
+                                    android:background="#d6d6d6"></View>
+
+                                <ImageView
+                                    android:id="@+id/image4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@mipmap/number4" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="已备案"
+
+                                    android:textColor="#333"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="统筹中"
+                                    android:textColor="#333"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="解债中"
+                                    android:textColor="#333"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="已解债"
+                                    android:textColor="#333"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/pay_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:background="#efefef"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="您未付费备案，解债服务无法继续进行，"
+                                android:textColor="#666"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/payfei"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="点击付费"
+                                android:textColor="#42a5f5"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#cccccc"></View>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="详细信息"
+                                android:textColor="#000000"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#cccccc"></View>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/tv_st"
+                                android:text="录入时间:" />
+
+                            <TextView
+                                android:id="@+id/get_time"
+                                style="@style/get_text"
+                                android:text="2017—5—4" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/debt_line">
+
+                            <TextView
+                                style="@style/tv_st"
+                                android:text="债事进展:" />
+
+                            <TextView
+                                android:id="@+id/debt_progress"
+                                style="@style/get_text" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/debt_line">
+
+                            <TextView
+                                style="@style/tv_st"
+                                android:text="债权人证号:" />
+
+                            <TextView
+                                android:id="@+id/get_creditors_number"
+                                style="@style/get_text" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/debt_line">
+
+                            <TextView
+                                style="@style/tv_st"
+                                android:text="债权人名称:" />
+
+                            <TextView
+                                android:id="@+id/get_creditors_name"
+                                style="@style/get_text" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/debt_line">
+
+                            <TextView
+                                style="@style/tv_st"
+                                android:text="债务人证号:" />
+
+                            <TextView
+                                android:id="@+id/get_debtor_number"
+                                style="@style/get_text" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/debt_line">
+
+                            <TextView
+                                style="@style/tv_st"
+                                android:text="债务人名称:" />
+
+                            <TextView
+                                android:id="@+id/get_debtor_name"
+                                style="@style/get_text" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/debt_line">
+
+                            <TextView
+                                style="@style/tv_st"
+                                android:text="债事类型:" />
+
+                            <TextView
+                                android:id="@+id/get_debt_type"
+                                style="@style/get_text" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/debt_line">
+
+                            <TextView
+                                style="@style/tv_st"
+                                android:text="债事性质:" />
+
+                            <TextView
+                                android:id="@+id/get_debt_nature"
+                                style="@style/get_text" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/debt_line">
+
+                            <TextView
+                                style="@style/tv_st"
+                                android:text="是否诉讼:" />
+
+                            <TextView
+                                android:id="@+id/get_is_suit"
+                                style="@style/get_text" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/debt_line">
+
+                            <TextView
+                                style="@style/tv_st"
+                                android:text="主体金额:" />
+
+                            <TextView
+                                android:id="@+id/get_main_money"
+                                style="@style/get_text" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/debt_line">
+
+                            <TextView
+                                style="@style/tv_st"
+                                android:text="债事发生时间:" />
+
+                            <TextView
+                                android:id="@+id/get_debt_time"
+                                style="@style/get_text" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/debt_line">
+
+                            <TextView
+                                style="@style/tv_st"
+                                android:text="备注:" />
+
+                            <TextView
+                                android:id="@+id/get_note"
+                                style="@style/get_text" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/debt_line">
+
+                            <TextView
+                                style="@style/tv_st"
+                                android:text="是否有债务人偿还欠款及利息的证据:" />
+
+                            <TextView
+                                android:id="@+id/get_is_evidence"
+                                style="@style/get_text" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/debt_line">
+
+                            <TextView
+                                style="@style/tv_st"
+                                android:text="是否有担保或者抵押的证明材料:" />
+
+                            <TextView
+                                android:id="@+id/get_is_material"
+                                style="@style/get_text" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/debt_line">
+
+                            <TextView
+                                style="@style/tv_st"
+                                android:text="是否有债务转让的证明材料:" />
+
+                            <TextView
+                                android:id="@+id/get_is_transfer"
+                                style="@style/get_text" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/debt_line">
+
+                            <TextView
+                                style="@style/tv_st"
+                                android:text="是否曾涉及诉讼/公证及支付令等法律文书:" />
+
+                            <TextView
+                                android:id="@+id/get_is_legal_document"
+                                style="@style/get_text" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/debt_line">
+
+                            <TextView
+                                style="@style/tv_st"
+                                android:text="身份证明:" />
+
+                            <com.jlgproject.view.CustomGridView
+                                android:id="@+id/get_is_Icard"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:numColumns="3"></com.jlgproject.view.CustomGridView>
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/debt_line">
+
+                            <TextView
+                                style="@style/tv_st"
+                                android:text="票据证明:" />
+
+                            <com.jlgproject.view.CustomGridView
+                                android:id="@+id/get_paper"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:numColumns="5"></com.jlgproject.view.CustomGridView>
+
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/debt_line">
+
+                            <TextView
+                                style="@style/tv_st"
+                                android:text="电子数据:" />
+
+                            <com.jlgproject.view.CustomGridView
+                                android:id="@+id/get_electronic_data"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:numColumns="5"></com.jlgproject.view.CustomGridView>
+
+                        </LinearLayout>
+
+                        <com.jlgproject.view.CustomGridView
+                            android:id="@+id/gridview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:horizontalSpacing="10dp"
+                            android:numColumns="3"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="10dp"
+                            android:scrollbars="none"
+                            android:verticalSpacing="10dp"></com.jlgproject.view.CustomGridView>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_xsdt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <ProgressBar
+                    android:id="@+id/debt_about_progress"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+
+</LinearLayout>
+
+
+
+

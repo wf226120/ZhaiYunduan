@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                style="@style/tv_st"
+                android:text="组织机构代码:"
+
+                />
+
+            <TextView
+                android:id="@+id/get_code"
+                style="@style/get_text"
+                android:text="000000000000" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/debt_line">
+
+            <TextView
+
+                style="@style/tv_st"
+                android:text="企业法人姓名:"
+
+                />
+
+            <TextView
+                android:id="@+id/get_legal_person_name"
+                style="@style/get_text" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/debt_line">
+
+            <TextView
+
+                style="@style/tv_st"
+                android:text="法人身份证号:"
+
+                />
+
+            <TextView
+                android:id="@+id/get_legal_person_icard"
+                style="@style/get_text" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/debt_line">
+
+            <TextView
+
+                style="@style/tv_st"
+                android:text="所属地区:"
+
+                />
+
+            <TextView
+                android:id="@+id/get_area"
+                style="@style/get_text" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/debt_line">
+
+            <TextView
+
+                style="@style/tv_st"
+                android:text="联系电话:"
+
+                />
+
+            <TextView
+                android:id="@+id/get_phone_number"
+                style="@style/get_text" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/debt_line">
+
+            <TextView
+
+                style="@style/tv_st"
+                android:text="注册资本:"
+
+                />
+
+            <TextView
+                android:id="@+id/get_registered_capital"
+                style="@style/get_text" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/debt_line">
+
+            <TextView
+
+                style="@style/tv_st"
+                android:text="所属行业:"
+
+                />
+
+            <TextView
+                android:id="@+id/get_industry"
+                style="@style/get_text" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/debt_line">
+
+            <TextView
+
+                style="@style/tv_st"
+                android:text="电子邮箱:"
+
+                />
+
+            <TextView
+                android:id="@+id/get_email"
+                style="@style/get_text" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/debt_line">
+
+            <TextView
+
+                style="@style/tv_st"
+                android:text="QQ:"
+
+                />
+
+            <TextView
+                android:id="@+id/get_qq"
+                style="@style/get_text" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/debt_line">
+
+            <TextView
+
+                style="@style/tv_st"
+                android:text="微信:"
+
+                />
+
+            <TextView
+                android:id="@+id/get_wetchat"
+                style="@style/get_text" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

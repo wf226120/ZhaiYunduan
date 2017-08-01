@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/line_layout">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="组织机构代码:"
+
+                    />
+
+                <EditText
+                    android:id="@+id/et_organization_code"
+                    style="@style/et_style"
+                    android:hint="请输入组织机构代码"/>
+            </LinearLayout>
+
+            <LinearLayout style="@style/line_layout">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="债事企业名称:" />
+
+                <EditText
+                    android:id="@+id/et_enterpeise_name"
+                    style="@style/et_style"
+                    android:hint="请输入债事企业名称"/>
+            </LinearLayout>
+
+            <LinearLayout style="@style/line_layout">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="企业法人姓名:" />
+
+                <EditText
+                    android:id="@+id/et_legal_person_name"
+                    style="@style/et_style"
+                    android:hint="请输入法人姓名" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/line_layout">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="法人身份证号:" />
+
+                <EditText
+                    android:id="@+id/et_legal_person_icard"
+                    style="@style/et_style"
+                    android:hint="请输入法人身份证号"
+                    />
+            </LinearLayout>
+
+            <LinearLayout style="@style/line_layout">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="归属地:" />
+
+                <LinearLayout
+                    style="@style/et_style"
+                  >
+                    <include layout="@layout/spinner">
+                    </include>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout style="@style/line_layout">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="所属行业:" />
+
+                <EditText
+                    android:id="@+id/et_industry"
+                    style="@style/et_style"
+                    android:hint="请选择公司所属行业"/>
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/line_layout">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="联系电话:" />
+
+                <EditText
+                    android:id="@+id/et_contact_phone_number"
+                    style="@style/et_style"
+                    android:hint="请输入手机号"
+                    android:inputType="number"
+                    />
+            </LinearLayout>
+            <LinearLayout style="@style/line_layout">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="注册资本:" />
+
+                <EditText
+                    android:id="@+id/et_the_registered_capital"
+                    style="@style/et_style"
+                    android:hint="元"
+                    android:inputType="number"
+                    />
+            </LinearLayout>
+            <LinearLayout style="@style/line_layout">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="电子邮箱:" />
+
+                <EditText
+                    android:id="@+id/et_email"
+                    style="@style/et_style"
+                    android:hint="非必填项"
+                    />
+            </LinearLayout>
+            <LinearLayout style="@style/line_layout">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="QQ:" />
+
+                <EditText
+                    android:id="@+id/et_qq"
+                    style="@style/et_style"
+                    android:hint="非必填项"/>
+            </LinearLayout>
+            <LinearLayout style="@style/line_layout">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="微信:" />
+
+                <EditText
+                    android:id="@+id/et_wetchcat"
+                    style="@style/et_style"
+                    android:hint="非必填项"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="285dp"
+                android:layout_height="33dp"
+                android:background="@drawable/login_btn"
+                android:layout_gravity="center_horizontal"
+                android:text="下一步"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:layout_marginTop="30dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"></LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

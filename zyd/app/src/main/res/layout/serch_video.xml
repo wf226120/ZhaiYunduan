@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/red"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/finsh_back"
+            android:layout_width="0dp"
+            android:layout_height="22dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="6dp"
+            android:src="@mipmap/back" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="36dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/sercheditor"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/serch_pic"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/sousuo" />
+
+            <EditText
+                android:id="@+id/serch_pivi"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:hint="请输入您搜索的标题/内容"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/jieguo_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="没有您所要搜索的结果"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+            <include layout="@layout/pull_gridview"></include>
+        </FrameLayout>
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

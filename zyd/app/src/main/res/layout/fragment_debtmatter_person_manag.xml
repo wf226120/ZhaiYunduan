@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bai"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar"></include>
+
+
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:id="@+id/serch_line"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/sercheditor"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/serch_fdj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/sousuo" />
+
+            <EditText
+                android:id="@+id/et_naicard"
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="请输入搜索的姓名和身份证号"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+        <include layout="@layout/debt_manger_listview"></include>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="权限不足，升级行长可查看"
+            android:textColor="#999"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

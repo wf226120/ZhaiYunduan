@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/header_banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:background="#FAFAFA"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+            <!--债事备案-->
+            <LinearLayout
+                android:id="@+id/ll_home_zsba"
+                style="@style/home_mokuan_style">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/home_zsba" />
+
+                <TextView
+                    style="@style/home_textView_style"
+                    android:text="债事备案" />
+
+            </LinearLayout>
+            <!--开通债行-->
+            <LinearLayout
+                android:id="@+id/ll_home_ktzh"
+                style="@style/home_mokuan_style">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/home_ktzh" />
+
+                <TextView
+                    style="@style/home_textView_style"
+                    android:text="开通债行" />
+            </LinearLayout>
+            <!--添加债事人-->
+            <LinearLayout
+                android:id="@+id/ll_home_tjzsr"
+                style="@style/home_mokuan_style">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/home_tjzsr" />
+
+                <TextView
+                    style="@style/home_textView_style"
+                    android:text="添加债事人" />
+            </LinearLayout>
+            <!--债事商城-->
+            <LinearLayout
+                android:id="@+id/ll_home_zssc"
+                style="@style/home_mokuan_style">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/home_zssc" />
+
+                <TextView
+                    style="@style/home_textView_style"
+                    android:text="债市商城" />
+            </LinearLayout>
+            <!--中金动态-->
+            <LinearLayout
+                android:id="@+id/ll_home_gyzj"
+                style="@style/home_mokuan_style">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/home_zjdt" />
+
+                <TextView
+                    style="@style/home_textView_style"
+                    android:text="中金动态" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+
+            <!--商学院-->
+            <LinearLayout
+                android:id="@+id/ll_home_sxy"
+                style="@style/home_mokuan_style">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/home_sxy" />
+
+                <TextView
+                    style="@style/home_textView_style"
+                    android:text="商学院" />
+            </LinearLayout>
+            <!--债事百科-->
+            <LinearLayout
+                android:id="@+id/ll_home_zsbk"
+                style="@style/home_mokuan_style">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/home_zsbk" />
+
+                <TextView
+                    style="@style/home_textView_style"
+                    android:text="债事百科" />
+
+            </LinearLayout>
+            <!--中金天眼-->
+            <LinearLayout
+                android:id="@+id/ll_home_zjty"
+                style="@style/home_mokuan_style">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/home_zjty" />
+
+                <TextView
+                    style="@style/home_textView_style"
+                    android:text="中金天眼" />
+            </LinearLayout>
+            <!--会员中心-->
+            <LinearLayout
+                android:id="@+id/ll_home_hyzx"
+                style="@style/home_mokuan_style">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/home_hyzx" />
+
+                <TextView
+                    style="@style/home_textView_style"
+                    android:text="会员中心" />
+            </LinearLayout>
+            <!--全部应用-->
+            <LinearLayout
+                android:id="@+id/ll_home_qbyy"
+                style="@style/home_mokuan_style">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/home_qbyy" />
+
+                <TextView
+                    style="@style/home_textView_style"
+                    android:text="全部应用" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="15dp"
+            android:background="#EFEFEF"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="@string/zuixin"
+                android:textColor="#434343"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_home_ckgd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:drawableRight="@mipmap/my_youjian"
+                    android:gravity="center"
+                    android:paddingRight="16dp"
+                    android:text="@string/lock"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#EFEFEF"
+
+            ></View>
+    </LinearLayout>
+
+</LinearLayout>

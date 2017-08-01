@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bai">
+    <include layout="@layout/title_bar"
+        ></include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/line_layout">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="股东名称:" />
+
+                <EditText
+                    android:id="@+id/et_share_name"
+                    style="@style/et_style"
+                    />
+            </LinearLayout>
+
+            <LinearLayout style="@style/line_layout">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="股东证件号:" />
+
+                <EditText
+                    android:id="@+id/et_icard"
+                    style="@style/et_style"
+                    android:inputType="number"
+                  />
+            </LinearLayout>
+
+            <LinearLayout style="@style/line_layout">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="地址:" />
+
+                <EditText
+                    android:id="@+id/et_adress"
+                    style="@style/et_style"
+                    />
+            </LinearLayout>
+
+            <LinearLayout style="@style/line_layout">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="投资金额:" />
+
+                <EditText
+                    android:id="@+id/et_acount"
+                    style="@style/et_style"
+                    android:inputType="number"
+                   />
+            </LinearLayout>
+
+            <LinearLayout style="@style/line_layout">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="投资比例:" />
+
+                <EditText
+                    android:id="@+id/et_bili"
+                    style="@style/et_style"
+                    android:hint="  %"
+                    android:inputType="number"
+                   />
+            </LinearLayout>
+
+            <LinearLayout style="@style/line_layout">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="注册资本:" />
+
+                <EditText
+                    android:id="@+id/et_ziben"
+                    style="@style/et_style"
+                    android:hint="  元"
+                    android:inputType="number"
+                    />
+            </LinearLayout>
+
+            <LinearLayout style="@style/line_layout">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="实到资本:" />
+
+                <EditText
+                    android:id="@+id/et_shidaoziben"
+                    style="@style/et_style"
+                    android:hint="  元"
+                    android:inputType="number"
+                    />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="285dp"
+                android:layout_height="33dp"
+                android:background="@drawable/login_btn"
+                android:layout_gravity="center_horizontal"
+                android:text="保   存"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:layout_marginTop="80dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_commission"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jlgproject.activity.MyCommission">
+
+
+    <LinearLayout style="@style/toolbar">
+
+        <include
+            layout="@layout/zyd_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></include>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:background="@color/red"
+            android:orientation="vertical"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:gravity="bottom"
+                android:text="总佣金（元）"
+                android:textColor="@color/bai"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_wallet_yue"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:gravity="center_vertical"
+                android:text="0.00"
+                android:textColor="@color/bai"
+                android:textSize="44sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7.5"
+            android:background="@color/bai"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--推荐行长佣金-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        style="@style/my_item_image"
+                        android:src="@mipmap/wallet_topup" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_commission_hzyj"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="8"
+                        android:background="@drawable/my_item_backage"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/my_item_2"
+                            android:layout_weight="8"
+                            android:text="推荐行长佣金" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:src="@mipmap/my_youjian" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--提现-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        style="@style/my_item_image"
+                        android:src="@mipmap/wallet_withdrawal" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_commission_bayj"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="8"
+                        android:background="@drawable/my_item_backage"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/my_item_2"
+                            android:layout_weight="8"
+                            android:text="备案佣金" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:src="@mipmap/my_youjian" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--解债佣金-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        style="@style/my_item_image"
+                        android:src="@mipmap/commission" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_commission_jzyj"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="8"
+                        android:background="@drawable/my_item_backage"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/my_item_2"
+                            android:layout_weight="8"
+                            android:text="解债佣金" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:src="@mipmap/my_youjian" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

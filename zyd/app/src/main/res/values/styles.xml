@@ -1,0 +1,338 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/red</item>
+        <item name="colorAccent">@color/red</item>
+
+    </style>
+
+    <style name="loan_vertical_item_style">
+        <item name="android:background">#bababa</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dip</item>
+    </style>
+
+    <!--顶部toolbar 父布局宽度-->
+    <style name="toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/red</item>
+    </style>
+
+    <!--底部导航ImageButton-->
+    <style name="mainActivitry_imageButton_style_2">
+        <item name="android:layout_width">62dp</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_marginTop">12dp</item>
+    </style>
+    <!--底部导航LinearLayout-->
+    <style name="mainActivitry_LinearLayout_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!--首页十个模块 LinearLayout_style-->
+    <style name="home_mokuan_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:onClick">clickLinearLayout</item>
+    </style>
+
+    <!--首页十个模块中textView style-->
+    <style name="home_textView_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+
+
+    <!--注册LinearLayout-->
+    <style name="resiger_liner">
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_width">match_parent</item><!--底部导航栏线-->
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="resiger_liner_textveiw">
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!--editor and textview 父布局-->
+    <style name="login_linerlayout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--editor style-->
+    <style name="editor">
+        <item name="android:layout_weight">7</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:background">@drawable/login_et_back</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <!--textview style-->
+    <style name="textView">
+        <item name="android:layout_weight">3</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+
+
+    <style name="resiger_liner_editor">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/login_et_back</item>
+        <item name="android:paddingLeft">7dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="et_styles">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingLeft">7dp</item>
+    </style>
+
+    <style name="line_view">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/gray</item>
+    </style>
+
+
+    <!--弹窗Dialog-->
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">false</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+
+
+    <!-- 对话框文字style -->
+    <style name="loan_dialog_msg_style">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <!-- 纵隔行样式 -->
+    <style name="loan_horizontalline_style">
+        <item name="android:background">@color/loan_divider_line_color</item>
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!-- 横隔行样式 -->
+    <style name="loan_verticalline_style">
+        <item name="android:background">@color/loan_divider_line_color</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+    </style>
+    <!-- 直角的按钮样式 -->
+    <style name="loan_btn_angle_style" parent="android:Widget.Holo.Light.Button">
+        <item name="android:background">@drawable/zyd_butoon_selector</item>
+        <item name="android:textColor">@color/loan_dialog_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dip</item>
+    </style>
+
+    <!--我的页线 style-->
+    <style name="my_item_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">4dp</item>
+        <item name="android:background">#efefef</item>
+    </style>
+
+    <!--推荐行长 & 解债数 line-->
+    <style name="my_h_line">
+        <item name="android:layout_width">4dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:src">@mipmap/my_line</item>
+        <item name="android:paddingTop">@dimen/dimen_16dp</item>
+        <item name="android:paddingBottom">@dimen/dimen_16dp</item>
+    </style>
+
+    <!--我的页 如 我的会员 style-->
+    <style name="my_item">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:textColor">#333</item>
+    </style>
+
+    <!--我的页 如 我的会员 style-->
+    <style name="my_item_2">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#333</item>
+    </style>
+
+    <!--我的页 如 我的账单 右箭头 style-->
+    <style name="my_item_youjian">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">2</item>
+    </style>
+
+    <!--我的页 item 中 图片 style-->
+    <style name="my_item_image">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <!-- 我的页 个字布局-->
+    <style name="my_item_shu">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- 我的页 个字布局-->
+    <style name="my_item_name">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <!--债事详情textstyle-->
+    <style name="tv_st">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:layout_marginLeft">15dp</item>
+    </style>
+    <!--债事详情获取的文本-->
+    <style name="get_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!--债事详情线性布局-->
+    <style name="debt_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="radio_styles">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:textColor">@color/color_select</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_width">65dp</item>
+        <item name="android:background">@drawable/radio_selector</item>
+    </style>
+
+    <!--新增债市企业的线布局-->
+    <style name="line_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <!--新增资产文本属性-->
+    <style name="tv_asset">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">#333</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="et_asset">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">5</item>
+        <item name="android:background">@drawable/login_et_back</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginRight">6dp</item>
+    </style>
+    <!--新增债市企业文本的属性-->
+    <style name="tv_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">#333</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingLeft">6dp</item>
+    </style>
+
+    <!--新增债市企业编辑框的属性-->
+    <style name="et_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/login_et_back</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_weight">5</item>
+    </style>
+</resources>

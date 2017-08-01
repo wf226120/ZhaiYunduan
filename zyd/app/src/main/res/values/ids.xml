@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--为标题栏titleView预定义id-->
+    <item name="tv_title_name" type="id"/>
+    <!--左文本id-->
+    <item name="tv_left_text" type="id"/>
+    <!--左图片id-->
+    <item name="iv_left_image" type="id"/>
+    <!--右文本id-->
+    <item name="tv_right_text" type="id"/>
+    <!--右图片id-->
+    <item name="iv_right_image" type="id"/>
+    <!--右边第二个图片id-->
+    <item name="iv_right_image_two" type="id"/>
+    <!--右边第二个文本id-->
+    <item name="tv_right_text_two" type="id"/>
+
+</resources>

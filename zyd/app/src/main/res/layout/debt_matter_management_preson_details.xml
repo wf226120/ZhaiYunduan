@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bai">
+    <include layout="@layout/title_bar"></include>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:scrollbars="none"
+        android:background="#efefef">
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#efefef"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <RadioButton
+                android:id="@+id/radio1"
+                style="@style/radio_styles"
+                android:text="基本信息"
+                android:checked="true"
+                />
+            <RadioButton
+                android:id="@+id/radio2"
+                android:text="资产信息"
+                style="@style/radio_styles"/>
+            <RadioButton
+                android:id="@+id/radio3"
+                android:text="需求信息"
+                style="@style/radio_styles"/>
+            <RadioButton
+                android:id="@+id/radio4"
+                android:text="债事信息"
+                style="@style/radio_styles"
+                android:layout_marginRight="20dp"/>
+        </RadioGroup>
+    </HorizontalScrollView>
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+</LinearLayout>

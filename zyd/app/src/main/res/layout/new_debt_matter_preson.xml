@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bai">
+
+
+    <include layout="@layout/title_bar"></include>
+
+
+    <LinearLayout
+        android:id="@+id/id_ly_bottombar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#efefef">
+        <RelativeLayout
+            android:id="@+id/btn_Wf1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#efefef"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            >
+            <TextView
+                android:id="@+id/txt_Wf1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="债事企业"
+                android:layout_centerInParent="true"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                />
+            <RelativeLayout
+                android:id="@+id/line_Wf1"
+                android:layout_alignParentBottom="true"
+                android:layout_alignBottom="@id/txtWf1"
+                android:background="@color/red"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_Wf2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#efefef"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            >
+            <TextView
+                android:id="@+id/txt_Wf2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="债事自然人"
+                android:layout_centerInParent="true"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                />
+
+            <RelativeLayout
+                android:id="@+id/line_Wf2"
+                android:background="@color/red"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_tjzrr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

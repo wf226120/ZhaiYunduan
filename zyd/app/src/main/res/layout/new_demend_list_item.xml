@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
+    <ImageView
+        android:id="@+id/imagebutton"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:src="@mipmap/gray"
+
+        />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+         android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="资产名称:"
+            android:textColor="#333"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="数量:"
+            android:textColor="#333"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="总价值:"
+            android:textColor="#333"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="流通价值:"
+            android:textColor="#333"
+            android:textSize="15sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/asset_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#333"
+            android:textSize="15sp"
+            android:text="别墅"/>
+        <TextView
+            android:id="@+id/acount"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textColor="#333"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/total_volva"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textColor="#333"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/current_value"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#333"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/title_bar"></include>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+
+            style="@style/tv_st"
+            android:text="资产名称:"
+
+            />
+
+        <TextView
+            android:id="@+id/real_estate"
+            style="@style/get_text"
+            android:text="房产" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/debt_line">
+
+        <TextView
+
+            style="@style/tv_st"
+            android:text="资产性质分类:"
+            />
+
+        <TextView
+            android:id="@+id/asset_type"
+            style="@style/get_text"
+            />
+    </LinearLayout>
+    <LinearLayout style="@style/debt_line">
+
+        <TextView
+
+            style="@style/tv_st"
+            android:text="总价值:"
+
+            />
+
+        <TextView
+            android:id="@+id/total_count"
+            style="@style/get_text"
+            />
+    </LinearLayout>
+    <LinearLayout style="@style/debt_line">
+
+        <TextView
+
+            style="@style/tv_st"
+            android:text="资产数量:"
+
+            />
+
+        <TextView
+            android:id="@+id/asserts_number"
+            style="@style/get_text"
+            />
+    </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/progress_demend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone">
+            <ProgressBar
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

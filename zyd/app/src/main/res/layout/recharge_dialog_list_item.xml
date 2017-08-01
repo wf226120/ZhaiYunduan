@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_dialog_parent"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        >
+        
+        <ImageView
+            android:id="@+id/iv_list_ite_tub"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:padding="10dp"
+            android:src="@mipmap/recharge_tjyhk"/>
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tv_list_item_yhk"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="招商银行卡储蓄卡（0506）"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/tv_list_item_ed"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="可用额度50000.00元"
+                android:gravity="center_vertical"
+                />
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/iv_list_item_dg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ka_choose"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    
+</LinearLayout>

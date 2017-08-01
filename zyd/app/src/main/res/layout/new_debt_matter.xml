@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bai"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar"></include>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bai"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bai">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/debt_types"
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="债事人类型:"
+                        android:textColor="#333"
+                        android:textSize="14sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_debt_preson_type"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_weight="5"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_zqr"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_state"
+                            android:checked="true"
+                            android:text="债权人"
+                            android:textColor="#666"
+                            android:textSize="13sp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_zwr"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_state"
+                            android:text="债务人"
+                            android:textColor="#666"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="22dp">
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="14dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="债务人证号:"
+                        android:textColor="#333"
+                        android:textSize="14sp" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5">
+
+                        <EditText
+                            android:id="@+id/et_debtpreson_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/login_et_back"
+                            android:gravity="center_vertical"
+                            android:hint="身份证号"
+                            android:paddingLeft="4dp"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/query1"
+                            android:layout_width="50dp"
+                            android:layout_height="20dp"
+                            android:layout_alignRight="@id/et_debtpreson_number"
+                            android:layout_marginLeft="195dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/login_btn"
+                            android:gravity="center"
+                            android:text="查询"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+
+                            />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_zsr_name"
+                        android:layout_width="0dp"
+                        android:layout_height="33dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="债务人名称:"
+                        android:textColor="#333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/debtor_name"
+                        android:layout_width="0dp"
+                        android:layout_height="33dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="5"
+                        android:background="@drawable/backgroud_text"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="4dp"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rl_debt_zqrzh"
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="债权人证号:"
+                        android:textColor="#333"
+                        android:textSize="14sp" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:paddingRight="20dp">
+
+                        <EditText
+                            android:id="@+id/et_creditors_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/login_et_back"
+                            android:gravity="center_vertical"
+                            android:hint="身份证号"
+                            android:paddingLeft="4dp"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/query2"
+                            android:layout_width="50dp"
+                            android:layout_height="20dp"
+                            android:layout_alignRight="@id/et_creditors_number"
+                            android:layout_marginLeft="195dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/login_btn"
+                            android:gravity="center"
+                            android:text="查询"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_debt_matter_zqrmc"
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="债权人名称:"
+                        android:textColor="#333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/creditors_name"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="5"
+                        android:background="@drawable/backgroud_text"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="4dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="债事类型:"
+                        android:textColor="#333"
+                        android:textSize="14sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_debt_type"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/currency"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_state"
+                            android:checked="true"
+                            android:text="货币"
+                            android:textColor="#666"
+                            android:textSize="13sp" />
+
+                        <RadioButton
+                            android:id="@+id/no_currency"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_state"
+                            android:text="非货币"
+                            android:textColor="#666"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="债事性质:"
+                        android:textColor="#333"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:gravity="left|center_vertical"
+                        android:orientation="vertical">
+
+
+                        <RadioGroup
+                            android:id="@+id/rg_debt_xz"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/single_preson"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:button="@drawable/radio_state"
+                                android:checked="true"
+                                android:text="个人"
+                                android:textColor="#666"
+                                android:textSize="13sp" />
+
+                            <RadioButton
+                                android:id="@+id/enterprise"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:button="@drawable/radio_state"
+                                android:text="企业"
+                                android:textColor="#666"
+                                android:textSize="14sp" />
+                        </RadioGroup>
+
+                        <RadioGroup
+                            android:id="@+id/rg_debt_qiye"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <RadioButton
+                                android:id="@+id/rb_debt_gq"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:button="@drawable/radio_state"
+                                android:checked="true"
+                                android:text="国企"
+                                android:textColor="#666"
+                                android:textSize="13sp" />
+
+                            <RadioButton
+                                android:id="@+id/rb_debt_sq"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:button="@drawable/radio_state"
+                                android:text="私企"
+                                android:textColor="#666"
+                                android:textSize="14sp" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="诉讼情况:"
+                        android:textColor="#333"
+                        android:textSize="14sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_ss"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/not_suit"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_state"
+                            android:checked="true"
+                            android:text="未诉讼"
+                            android:textColor="#666"
+                            android:textSize="13sp" />
+
+                        <RadioButton
+                            android:id="@+id/have_action"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_state"
+                            android:text="已诉讼"
+                            android:textColor="#666"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="20dp"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="债事金额:"
+                        android:textColor="#333"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/et_main_amount"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:background="@drawable/login_et_back"
+                        android:gravity="center_vertical"
+                        android:hint="元"
+                        android:inputType="number"
+                        android:paddingLeft="5dp"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="12dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="债事发生时间:"
+                        android:textColor="#333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/select_time"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="5"
+                        android:background="@drawable/login_et_back"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="点击选择发生债事时间"
+                        android:textColor="#666"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="推荐编码:"
+                        android:textColor="#333"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/et_referees"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:background="@drawable/login_et_back"
+                        android:gravity="center_vertical"
+                        android:hint="请输入推荐人手机号"
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="60dp"
+                    android:gravity="center"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp">
+
+                    <Button
+                        android:id="@+id/next"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/login_btn"
+                        android:gravity="center"
+                        android:text="下一步"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

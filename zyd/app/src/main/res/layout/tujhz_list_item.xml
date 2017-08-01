@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="46dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/label" />
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="39dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/image"
+        android:text="姓名:"
+        android:textColor="#333"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_h_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/tv_name"
+        android:text="2017—12—13"
+        android:textColor="#333"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_creditors"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="10dp"
+        android:text="手机号:"
+        android:textColor="#333"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_h_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_h_name"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tv_creditors"
+        android:text="你好"
+        android:textColor="#333"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_the_debtor"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_creditors"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="10dp"
+        android:text="地址:"
+        android:textColor="#333"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_h_adress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_h_phone"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tv_the_debtor"
+        android:text="你好"
+        android:textColor="#333"
+        android:textSize="15sp" />
+
+
+    <!--主体金额-->
+    <TextView
+        android:id="@+id/tv_principal_amount"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_the_debtor"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="10dp"
+        android:text="债行类型:"
+        android:textColor="#333"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_h_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_h_adress"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tv_principal_amount"
+        android:text="5000"
+        android:textColor="#333"
+        android:textSize="15sp" />
+
+</RelativeLayout>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/title_bar"></include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+
+            style="@style/tv_st"
+            android:text="资产名称:"
+
+            />
+
+        <TextView
+            android:id="@+id/get_code"
+            style="@style/get_text"
+            android:text="房产" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/debt_line">
+
+        <TextView
+
+            style="@style/tv_st"
+            android:text="资产性质分类:"
+            />
+
+        <TextView
+            android:id="@+id/get_legal_person_name"
+            style="@style/get_text"
+            />
+    </LinearLayout>
+    <LinearLayout style="@style/debt_line">
+
+        <TextView
+
+            style="@style/tv_st"
+            android:text="总价值:"
+
+            />
+
+        <TextView
+            android:id="@+id/get_legal_person_icard"
+            style="@style/get_text"
+            />
+    </LinearLayout>
+    <LinearLayout style="@style/debt_line">
+
+        <TextView
+
+            style="@style/tv_st"
+            android:text="资产数量:"
+
+            />
+
+        <TextView
+            android:id="@+id/get_area"
+            style="@style/get_text"
+            />
+    </LinearLayout>
+    <LinearLayout style="@style/debt_line">
+
+        <TextView
+
+            style="@style/tv_st"
+            android:text="可流通资产价值:"
+
+            />
+
+        <TextView
+            android:id="@+id/get_phone_number"
+            style="@style/get_text"
+            />
+    </LinearLayout>
+    <LinearLayout style="@style/debt_line">
+
+        <TextView
+
+            style="@style/tv_st"
+            android:text="资产凭证:"
+
+            />
+
+        <TextView
+            android:id="@+id/get_registered_capital"
+            style="@style/get_text"
+            />
+    </LinearLayout> <LinearLayout style="@style/debt_line">
+
+    <TextView
+
+        style="@style/tv_st"
+        android:text="资产详情:"
+
+        />
+
+    <TextView
+        android:id="@+id/get_adress"
+        style="@style/get_text"
+        />
+</LinearLayout>
+    <LinearLayout style="@style/debt_line">
+
+        <TextView
+
+            style="@style/tv_st"
+            android:text="抵押等数量和价值:"
+
+            />
+
+        <TextView
+            android:id="@+id/get_industry"
+            style="@style/get_text"
+            />
+    </LinearLayout>
+    <LinearLayout style="@style/debt_line">
+
+        <TextView
+
+            style="@style/tv_st"
+            android:text="诉讼情况:"
+
+            />
+
+        <TextView
+            android:id="@+id/get_email"
+            style="@style/get_text"
+            />
+    </LinearLayout>
+    <LinearLayout style="@style/debt_line">
+
+        <TextView
+
+            style="@style/tv_st"
+            android:text="流通资产:"
+
+            />
+
+        <TextView
+            android:id="@+id/get_qq"
+            style="@style/get_text"
+            />
+    </LinearLayout>
+    <LinearLayout style="@style/debt_line">
+
+        <TextView
+
+            style="@style/tv_st"
+            android:text="归属人:"
+
+            />
+
+        <TextView
+            android:id="@+id/get_wetchat"
+            style="@style/get_text"
+            />
+    </LinearLayout>
+    <LinearLayout style="@style/debt_line">
+
+        <TextView
+
+            style="@style/tv_st"
+            android:text="所在位置:"
+
+            />
+
+        <TextView
+            android:id="@+id/adress"
+            style="@style/get_text"
+            />
+    </LinearLayout>
+    <LinearLayout style="@style/debt_line">
+
+        <TextView
+
+            style="@style/tv_st"
+            android:text="联系电话:"
+
+            />
+
+        <TextView
+            android:id="@+id/phone_nuber"
+            style="@style/get_text"
+            />
+    </LinearLayout>
+    <LinearLayout style="@style/debt_line">
+
+        <TextView
+
+            style="@style/tv_st"
+            android:text="限制流通原因:"
+
+            />
+
+        <TextView
+            android:id="@+id/restricted_circulation_cause"
+            style="@style/get_text"
+            />
+    </LinearLayout>
+    <LinearLayout style="@style/debt_line">
+
+        <TextView
+
+            style="@style/tv_st"
+            android:text="质押对象:"
+
+            />
+
+        <TextView
+            android:id="@+id/object_pledge"
+            style="@style/get_text"
+            />
+    </LinearLayout>
+    <LinearLayout style="@style/debt_line">
+
+        <TextView
+
+            style="@style/tv_st"
+            android:text="限制流通价值:"
+
+            />
+
+        <TextView
+            android:id="@+id/restricted_circulation_value"
+            style="@style/get_text"
+            />
+    </LinearLayout>
+    <LinearLayout style="@style/debt_line">
+
+        <TextView
+
+            style="@style/tv_st"
+            android:text="限制流通负债量:"
+
+            />
+
+        <TextView
+            android:id="@+id/limit_current_liabilities"
+            style="@style/get_text"
+            />
+    </LinearLayout>
+        <com.jlgproject.view.CustomGridView
+            android:layout_marginTop="20dp"
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="10dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"></com.jlgproject.view.CustomGridView>
+    </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
